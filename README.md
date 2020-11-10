@@ -6,9 +6,11 @@
    
    *1.2 Python Lists* 
 
-   *1.3 Functions and Packages* 
+   *1.3 Functions
+   
+   *1.4 Packages*
 
-   *1.4 NumPy* 
+   *1.5 NumPy* 
 
 **2. Intermediate Python**
 
