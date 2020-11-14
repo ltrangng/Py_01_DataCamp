@@ -6,7 +6,7 @@
    
    *1.2 Python Lists* 
 
-   *1.3 Functions
+   *1.3 Functions*
    
    *1.4 Packages*
 
@@ -16,11 +16,13 @@
 
    *2.1 Matplotlib*
    
-   *2.2 Dictionaries & Pandas*
+   *2.2 Dictionaries *  
    
-   *2.3 Logic, Control Flow and Filtering*
+   *2.3 Pandas*
    
-   *2.4 Loops*
+   *2.4 Logic, Control Flow and Filtering*
+   
+   *2.5 Loops*
    
 **3. Data manipulation with pandas**
 
