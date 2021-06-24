@@ -16,7 +16,7 @@
 
    *2.1 Matplotlib*
    
-   *2.2 Dictionaries *  
+   *2.2 Dictionaries*  
    
    *2.3 Pandas*
    
@@ -25,6 +25,14 @@
    *2.5 Loops*
    
 **3. Data manipulation with pandas**
+   
+   *3.1 Transforming data*
+   
+   *3.2 Aggregrating data*
+   
+   *3.3 Slicing and Indexing*
+   
+   *3.4 Creating and Visualizing DataFrames*
 
 **4. Joining data with pandas**
 
