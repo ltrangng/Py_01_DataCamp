@@ -91,12 +91,12 @@ for var in np.nditer(meas) :
     print(var)
 # Import the height of the baseball players in inches
 from numpy import genfromtxt
-np_height = np.array(genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/height_in.csv", dtype = "int", delimiter=','))
+np_height = np.array(genfromtxt("0_data/height_in.csv", dtype = "int", delimiter=','))
 # For loop over np_height
 for x in np_height :
     print(str(x) + " inches")
 # Import the 2D array of baseball players' measurement
-np_baseball = np.array(genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/baseball_2d.csv", dtype = "int", delimiter = ","))
+np_baseball = np.array(genfromtxt("0_data/baseball_2d.csv", dtype = "int", delimiter = ","))
 # For loop over np_baseball
 for x in np.nditer(np_baseball) :
     print(x)
@@ -104,7 +104,7 @@ for x in np.nditer(np_baseball) :
 # Loop over a DataFrame
 # Import the csv file containing the brics country data
 import pandas as pd
-brics = pd.read_csv("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/brics.csv", index_col = 0)
+brics = pd.read_csv("0_data/brics.csv", index_col = 0)
 # Try to loop over brics
 for var in brics :
     print(var) # simply returns column names.
@@ -124,7 +124,7 @@ brics["name_length"] = brics["country"].apply(len)
 print(brics)
 
 # Import the cars csv file
-cars = pd.read_csv("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/cars.csv", index_col = 0)
+cars = pd.read_csv("0_data/cars.csv", index_col = 0)
 # Iterate over rows of cars
 for lab, row in cars.iterrows() :
     print(lab)

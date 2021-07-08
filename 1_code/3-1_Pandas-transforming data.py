@@ -60,8 +60,7 @@ bmi_lt_100_height = bmi_lt_100.sort_values("height_cm", ascending = False) # tal
 bmi_lt_100_height[["name", "height_cm", "bmi"]] # keep only columns we're interested in.
 
 # Import homelessness.csv file, a DataFrame containing estimates of homelessness in each U.S. state in 2018.
-homelessness = pd.read_csv("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/homelessness.csv", 
-                       index_col = 0)
+homelessness = pd.read_csv("0_data/homelessness.csv", index_col = 0)
 # Inspect the DataFrame
 homelessness.head()
 # Print information about the column types and missing values

@@ -26,13 +26,13 @@ bmi[bmi > 23]
 
 # You receive a list of baseball players' height in inches
 from numpy import genfromtxt
-height_in = genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/height_in.csv", dtype = "int", delimiter=',')
+height_in = genfromtxt("0_data/height_in.csv", dtype = "int", delimiter=',')
 np_height_in = np.array(height_in)
 # Convert height from inches to meters
 np_height_m = np_height_in * 0.0254
 print(np_height_m)
 # You also receive a list of weight in pounds
-weight_lb = genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/weight_lb.csv", dtype = "int", delimiter = ",")
+weight_lb = genfromtxt("0_data/weight_lb.csv", dtype = "int", delimiter = ",")
 np_weight_lb = np.array(weight_lb)
 # Convert weight from pounds to kilograms
 np_weight_kg = np_weight_lb * 0.453592
@@ -58,14 +58,14 @@ np_2d.shape # shape uses dot notation similar like methods, it does not require 
 # Also in 2D arrays, the Numpy rule applies: an array can contain only a single type.
 np.array([[1.73, 1.68, 1.71, 1.89, 1.79],[65.4, 59.2, 63.6, 88.4,"68.7"]]) # all elements are coerced into strings
 # Restructure the BMI information in a 2D numpy array
-baseball = genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/baseball_2d.csv", dtype = "int", delimiter = ",")
+baseball = genfromtxt("0_data/baseball_2d.csv", dtype = "int", delimiter = ",")
 np_baseball = np.array(baseball)
 print(np_baseball)
 
 # 2D Arithmetic
 # Numpy is also able to perform all calculations element-wise in 2D arrays.
 # np_baseball is coded this time as a 2D array with 3 columns representing height (in inches), weight (in pounds) and age (in years)
-baseball = genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/baseball_2d-2.csv", dtype = "int", delimiter = ",")
+baseball = genfromtxt("0_data/baseball_2d-2.csv", dtype = "int", delimiter = ",")
 np_baseball = np.array(baseball)
 print(np_baseball)
 #  convert the units of height and weight to metric

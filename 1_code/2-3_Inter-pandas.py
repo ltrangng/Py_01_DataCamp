@@ -16,10 +16,10 @@ brics
 # Create a DataFrame
 # DataFrame can be created manually from a dictionary like in brics. But mostly it is imported from an external file
 # read_csv(): import csv file 
-brics = pd.read_csv("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/brics.csv")
+brics = pd.read_csv("0_data/brics.csv")
 brics # the row labels are still seen as in their own column.
 # Specify the index_col argument in read_csv()
-brics = pd.read_csv("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/brics.csv", index_col = 0)
+brics = pd.read_csv("0_data/brics.csv", index_col = 0)
 brics
 # Create manually a dataframe with vehicle data from different countries
 names = ['United States', 'Australia', 'Japan', 'India', 'Russia', 'Morocco', 'Egypt']
@@ -34,7 +34,7 @@ cars = pd.DataFrame(my_dict)
 cars.index = row_labels
 cars
 # More efficiently, import the csv as a DataFrame
-cars = pd.read_csv("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/cars.csv", index_col = 0)
+cars = pd.read_csv("0_data/cars.csv", index_col = 0)
 cars
 
 # Index and select data from DataFrame
