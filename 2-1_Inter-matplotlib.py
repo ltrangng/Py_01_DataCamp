@@ -17,8 +17,8 @@ plt.show()
 # Line plot
 # Examine line plots for larger dataset, e.g, the World Bank's estimation of the world population
 from numpy import genfromtxt
-year = genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/year.csv", dtype = "int", delimiter = ",")
-pop = genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/pop.csv", dtype = "float", delimiter = ",")
+year = genfromtxt("0_data/year.csv", dtype = "int", delimiter = ",")
+pop = genfromtxt("0_data/pop.csv", dtype = "float", delimiter = ",")
 # Print the last item to see the predicted population in 2100
 print(year[-1])
 print(pop[-1])
@@ -26,8 +26,8 @@ print(pop[-1])
 plt.plot(year, pop)
 plt.show() # the plot looks more smooth now because there are more data points.
 # Import the gapminder data from Hans Rosling that was collected in 2007
-life_exp = genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/life_exp.csv", dtype = "float", delimiter = ",")
-gdp_cap = genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/gdp_cap.csv", dtype = "float", delimiter = ",")
+life_exp = genfromtxt("0_data/life_exp.csv", dtype = "float", delimiter = ",")
+gdp_cap = genfromtxt("0_data/gdp_cap.csv", dtype = "float", delimiter = ",")
 # Print the last item from both the list. It's information about Zimbawe.
 print(life_exp[-1])
 print(gdp_cap[-1])
@@ -44,7 +44,7 @@ plt.scatter(gdp_cap, life_exp)
 plt.xscale("log")
 plt.show() # positive correlation
 # How about a relationship between population and life expectancy of a country? 
-pop_2007 = genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/pop_2007.csv", dtype = "float", delimiter = ",")
+pop_2007 = genfromtxt("0_data/pop_2007.csv", dtype = "float", delimiter = ",")
 plt.scatter(pop_2007,life_exp)
 plt.show() # no clear correlation, which makes sense.
 
@@ -65,7 +65,7 @@ plt.hist(life_exp, bins = 20)
 plt.show()
 plt.clf()
 # The histogram makes it easy to compare, e.g, life expectancy in 2007 and in 1950.
-life_exp_1950 = genfromtxt("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/life_exp_1950.csv", dtype = "float", delimiter = ",")
+life_exp_1950 = genfromtxt("0_data/life_exp_1950.csv", dtype = "float", delimiter = ",")
 # Build two histograms to see the difference
 plt.hist(life_exp, bins = 15)
 plt.show()

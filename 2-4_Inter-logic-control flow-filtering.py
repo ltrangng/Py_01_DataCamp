@@ -123,7 +123,7 @@ else :
 # Import csv file
 import pandas as pd
 import numpy as np
-brics = pd.read_csv("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/brics.csv", index_col = 0)
+brics = pd.read_csv("0_data/brics.csv", index_col = 0)
 brics
 # Select countries with over area greater than 8 million square kilometers
 brics["area"]   # get column
@@ -141,7 +141,7 @@ np.logical_and(brics["area"] > 8, brics["area"] < 10) # create a Boolean series
 # Subset DataFrame
 brics[np.logical_and(brics["area"] > 8, brics["area"] < 10)]
 # Import cars data
-cars = pd.read_csv("https://raw.githubusercontent.com/ltrangng/Py_01_DataCamp/main/0_data/cars.csv", index_col = 0)
+cars = pd.read_csv("0_data/cars.csv", index_col = 0)
 # Extract drives_right column
 dr = cars["drives_right"] 
 sel = cars[dr]
