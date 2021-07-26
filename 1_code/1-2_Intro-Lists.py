@@ -59,7 +59,7 @@ fam[:4] # starts from index 0.
 fam[5:] # include all elements up to and include the last element in the list.
 # After you've extracted values from a list, you can use them to perform additional calculations. 
 eat_sleep_area = areas[3] + areas[-3]
-eat_sleep_area
+print(eat_sleep_area)
 # Use slicing to create a lists from areas
 downstairs = areas[:6]
 print(downstairs)
@@ -93,5 +93,4 @@ areas_copy = areas[:]
 areas_copy[0] = 5.0 # change areas_copy.
 # Check out both areas and areas_copy:
 print(areas)
-print(areas_copy)    
-    
+print(areas_copy)        
